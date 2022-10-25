@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: black;
+    // background-image: url(https://thumbs.dreamstime.com/b/pizza-margarita-dark-background-vegetarian-concept-144732590.jpg);
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // transition: 5s;
+    // background-size: 100%;
+
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(227, 227, 215);
+}
+
+
+
+header{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    font-size: 10pt;
+
+    #logo{
+        height: 90px;
+    }
+
+    > nav{
+        justify-self: end;
+        align-self: center;
+    }
+
+    a{
+        text-decoration: none;
+        margin: 9px;
+        color: white;
+        padding: 8px;
+        border-radius: 15px;
+        background-color: rgba(211, 211, 211, 0.134);
+        margin-top: 10px;
+    }
+}
+
+
+
+
+#main{
+    display: grid;
+
+    > img{
+        width: 100%;
+        opacity: 0.7;
+        }
+
+    p, h2{
+        position: absolute;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    > p{
+        // display: block;
+        margin-top: 20%;
+        margin-left: 50%;
+        text-shadow: 2px 2px 5px rgb(193, 193, 107);
+    
+    }
+
+    h2{
+        margin-top: 50%;
+        margin-left: 64%;
+        transition: 3s;
+        text-shadow: 2px 2px 5px rgb(193, 193, 107);
+    }
+}
+
+
+
+
+.middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    > img{
+        width: 100%;
+        opacity: 0.9;
+        filter: drop-shadow(0 -6mm 4mm rgb(194, 164, 56));
+    }
+
+    a{
+        position: absolute;
+        justify-self: center;
+        padding: 15px;
+        border-radius: 50px;
+        background-color: rgba(211, 211, 211, 0.828);
+        text-decoration: none;
+        color: black;
+        text-shadow: 1px 1px 2px white, 0 0 25px yellow;
+    }
+
+    .one{
+        margin-top: 15%;
+        animation: fadein 3s;
+    }
+
+    .two{
+        margin-top: 35%;
+        animation: fadein 3s;
+    }
+
+    .three{
+        margin-top: 55%;
+        animation: fadein 3s;
+    }
+}  
+
+    @keyframes fadein{
+        0%{opacity:0.3;}
+        100% {opacity: 1;}
+    }
+
+
+
+#map{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    >iframe{
+        height: 30vh;
+        opacity: 0.7;
+        width: 100%;
+        filter: drop-shadow(0 -6mm 4mm rgb(194, 164, 56));
+        animation: fadein 3s;
+    }
+}
+
+footer > p{
+    font-style: italic;
+    text-align: center;
+    font-size: 8pt;
+}
+
+
+/*TABLET MEDIA QUERY*/
+
+@media only screen and (min-width:600px){
+    
+    #logo{
+       justify-self: center;
+    }
+
+    #main >p{
+        margin-left: 50%;
+        font-size: 13px;
+    }
+
+    #main >h2{
+        font-size: 13px;
+    }
+}
+
+/*DESKTOP MEDIA QUERY*/
+
+@media only screen and (min-width:1000px){
+    header{
+        font-size: 20pt;
+    }
+
+    header #logo{
+        height: 200px;
+    }
+    
+}
