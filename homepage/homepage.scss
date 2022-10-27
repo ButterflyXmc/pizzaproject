@@ -17,16 +17,21 @@ body{
 
 header{
     display: grid;
-    grid-template-columns: 120px 1fr;
-    font-size: 10pt;
+    grid-template-columns: 1fr 1fr;
+    font-size: 13pt;
 
     #logo{
-        height: 90px;
+        // height: 100px;
+        width: 67%;
     }
 
     > nav{
         justify-self: end;
         align-self: center;
+
+        >p{
+            display: none;
+        }
     }
 
     a{
@@ -35,7 +40,7 @@ header{
         color: white;
         padding: 8px;
         border-radius: 15px;
-        background-color: rgba(211, 211, 211, 0.134);
+        background-color: rgba(121, 134, 23, 0.134);
         margin-top: 10px;
     }
 }
@@ -92,7 +97,7 @@ header{
         border-radius: 50px;
         background-color: rgba(211, 211, 211, 0.828);
         text-decoration: none;
-        color: black;
+        color: rgb(45, 43, 43);
         text-shadow: 1px 1px 2px white, 0 0 25px yellow;
     }
 
@@ -143,34 +148,70 @@ footer > p{
 
 @media only screen and (min-width:600px){
     
+   header{
+
     #logo{
-       justify-self: center;
+       justify-self: left;
+       height: 200px;
     }
+    > nav{
+        a{
+            display: none;
+        }
 
-    #main >p{
+        p{
+            display: initial;
+            font-size: 20pt;
+            margin-right: 20px;
+        }
+    }
+   } 
+   
+
+    #main{
+     >p{
         margin-left: 50%;
-        font-size: 13px;
+        font-size: 15pt;
+        width: 50%;
     }
+    >h2{
+        font-size: 14pt;
+    }
+   }
 
-    #main >h2{
-        font-size: 13px;
+   .middle{
+    > a{
+        font-size: 20pt;
     }
-}
+   }
+
+ }
+    
+   
+
+   
 
 /*DESKTOP MEDIA QUERY*/
 
 @media only screen and (min-width:1000px){
     header{
-        font-size: 20pt;
-    }
+        #logo{
+            height: 300px;
+        }
+
+        > nav p{
+                font-size: 35pt;
+            }
+        }
+       
 
     #main{
         > p{
-            font-size: 1.5em;
+            font-size: 2.0em;
         }
 
         >h2{
-            font-size: 1em;
+            font-size: 1.8em;
         }
     }
 }
