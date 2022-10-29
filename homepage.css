@@ -20,11 +20,11 @@ header {
 header #logo {
   width: 67%;
 }
-header > nav {
+header nav {
   justify-self: end;
   align-self: center;
 }
-header > nav > p {
+header nav > p {
   display: none;
 }
 header a {

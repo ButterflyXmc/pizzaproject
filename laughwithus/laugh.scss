@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://img.freepik.com/free-vector/vector-seamless-pizza-pattern-background_53876-116505.jpg?w=360);
+    animation: moving linear 16s infinite;
+    text-align: center;
+}
+
+@keyframes moving{
+    from{background-position: 0px;}
+    to{background-position: -300px;}
+}
+    
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+
+
+    #logo{
+        // height: 100px;
+        width: 67%;
+    }
+
+    nav{
+        justify-self: end;
+        align-self: center;
+
+        >p{
+            display: none;
+        }
+ }
+    
+
+    a{
+        text-decoration: none;
+        margin: 9px;
+        color: white;
+        padding: 8px;
+        border-radius: 15px;
+        background-color: rgba(121, 134, 23, 0.134);
+        margin-top: 10px;
+
+}
+}
+
+h1{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: rgba(161, 158, 158, 0.494);
+    font-size: 1.6em;
+    box-shadow:10px 10px 50px rgb(147, 106, 9);
+    font-size: 3em;
+}
+
+h2{
+    color: rgb(211, 198, 140);
+    margin-top: 20px;
+}
+
+
+.question{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgba(42, 70, 155, 0.108);
+    margin-top: 40px;
+    box-shadow:10px 10px 50px rgba(43, 2, 247, 0.5);
+    
+    > h3{
+        color: white;
+        font-size: 1.3em;
+        }
+
+    .answer{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-size: 1.2em;
+    }
+}
+
+
+@media only screen and (min-width:600px){
+    h1{
+        font-size: 4em;
+    }
+
+    header{
+        #logo{
+            height: 170px;
+        }
+
+        a{
+            display: none;
+        }
+
+        > nav p{
+             display: initial;
+             margin: 9px;
+             color: white;
+             padding: 8px;
+             border-radius: 15px;
+             background-color: rgba(121, 134, 23, 0.134);
+             margin-top: 10px;
+             font-size: 20pt;
+            }
+        
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+   .question{
+    
+    h3{
+        font-size: 1.6em;
+    }
+
+    .answer{
+        font-size: 1.5em;
+    }
+}
+}
+
+/*DESKTOP MEDIA QUERY*/
+
+@media only screen and (min-width:1000px){
+
+    header #logo{
+        width: 40%;
+        height: 200px;
+    }
+
+    h1{
+        font-size: 6em;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    .question{
+        h3{
+            font-size: 2.7em;
+        }
+
+        .answer{
+            font-size: 2em;
+        }
+    }
+}

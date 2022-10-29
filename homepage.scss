@@ -14,7 +14,6 @@ body{
 }
 
 
-
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -25,14 +24,15 @@ header{
         width: 67%;
     }
 
-    > nav{
+    nav{
         justify-self: end;
         align-self: center;
 
         >p{
             display: none;
         }
-    }
+ }
+    
 
     a{
         text-decoration: none;
@@ -42,7 +42,8 @@ header{
         border-radius: 15px;
         background-color: rgba(121, 134, 23, 0.134);
         margin-top: 10px;
-    }
+
+}
 }
 
 
