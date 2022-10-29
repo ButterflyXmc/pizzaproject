@@ -116,7 +116,7 @@ a > img {
 @media only screen and (min-width: 1000px) {
   header #logo {
     height: 200x;
-    width: 50%;
+    width: 30%;
   }
   header nav > p {
     font-size: 28pt;

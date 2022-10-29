@@ -4,7 +4,7 @@
 }
 
 html {
-  background-color: black;
+  background-color: rgb(3, 2, 2);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,11 +16,11 @@ header {
 header #logo {
   width: 67%;
 }
-header > nav {
+header nav {
   justify-self: end;
   align-self: center;
 }
-header > nav > p {
+header nav > p {
   display: none;
 }
 header a {
@@ -33,6 +33,14 @@ header a {
   margin-top: 10px;
 }
 
+.pics {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.pics > img {
+  width: 100%;
+}
+
 h1, h2, h3 {
   color: white;
 }
@@ -42,12 +50,11 @@ h2, h3 {
 }
 
 h3 {
-  background-color: rgba(170, 120, 44, 0.178);
   border-radius: 20px;
   margin: 10px;
 }
 
-p {
+#price {
   color: white;
   background-color: rgba(73, 73, 69, 0.506);
   margin-right: 40%;
@@ -56,7 +63,7 @@ p {
 }
 
 h1 {
-  font-size: 2.3em;
+  font-size: 3em;
   background-color: rgba(227, 218, 159, 0.511);
   border: solid 1px white;
   text-align: center;
@@ -69,35 +76,193 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
 }
-#starters h2 {
+
+h2 {
   border: solid 0.5px white;
   margin: 20px;
-}
-#starters h2 > p {
-  border: solid 2 px white;
+  text-align: center;
+  box-shadow: 10px 10px 50px rgb(164, 25, 48);
 }
 
 #pizza {
   text-align: center;
 }
-#pizza h2 {
-  border: solid 0.5px white;
-  margin: 20px;
-}
-#pizza h2 > p {
-  border: solid 2 px white;
-}
 #pizza > h3 {
-  background-color: rgba(170, 120, 44, 0.178);
   border-radius: 20px;
   margin: 10px;
 }
-#pizza .des {
+
+.des {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
 }
-#pizza .des .price {
+.des .price {
   color: white;
   margin: 10px;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  background-color: rgba(128, 128, 128, 0.127);
+}
+.description > h3 {
+  align-self: center;
+  text-align: center;
+}
+.description .price {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgba(76, 81, 42, 0.134);
+  align-self: center;
+  text-align: center;
+}
+
+.pic {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.pri {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
+  align-self: center;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.142);
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 40px;
+}
+
+#beers {
+  background-color: rgba(128, 128, 128, 0.139);
+  text-align: center;
+}
+
+#juice {
+  color: white;
+  text-align: center;
+}
+
+#pop {
+  color: white;
+  text-align: center;
+}
+
+footer > p {
+  font-style: italic;
+  text-align: center;
+  font-size: 8pt;
+  color: white;
+  margin-top: 30px;
+}
+
+/*TABLET MEDIA QUERY*/
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 4em;
+  }
+  header #logo {
+    width: 80%;
+  }
+  header a {
+    display: none;
+  }
+  header > nav p {
+    display: initial;
+    margin: 9px;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgba(121, 134, 23, 0.134);
+    margin-top: 10px;
+    font-size: 20pt;
+  }
+  h2 {
+    box-shadow: 10px 10px 50px rgb(164, 143, 25);
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.7em;
+  }
+  #price, .price, .pri, #pop {
+    font-size: 1.7em;
+  }
+}
+#video {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#video > iframe {
+  width: 100%;
+}
+
+/*DESKTOP MEDIA QUERY*/
+@media only screen and (min-width: 1000px) {
+  header #logo {
+    height: 200x;
+    width: 30%;
+  }
+  #star {
+    position: absolute;
+    background-color: rgba(227, 218, 159, 0);
+    margin-left: 30%;
+    margin-top: 10%;
+    padding: 30px;
+    font-size: 5em;
+    box-shadow: 10px 10px 50px rgb(16, 73, 70);
+  }
+  #gourmet {
+    position: absolute;
+    background-color: rgba(227, 218, 159, 0.034);
+    margin-left: 20%;
+    margin-top: 5%;
+    padding: 30px;
+    box-shadow: 10px 10px 50px rgb(16, 73, 70);
+  }
+  #salad {
+    position: absolute;
+    background-color: rgba(227, 218, 159, 0);
+    margin-left: 50%;
+    font-size: 5em;
+    margin-top: 25%;
+    padding: 30px;
+    box-shadow: 10px 10px 50px rgb(16, 73, 70);
+  }
+  #lunch {
+    position: absolute;
+    background-color: rgba(227, 218, 159, 0);
+    margin-left: 13%;
+    font-size: 5em;
+    margin-top: 10%;
+    padding: 30px;
+    box-shadow: 10px 10px 50px rgb(16, 73, 70);
+  }
+  #drinks {
+    position: absolute;
+    background-color: rgba(227, 218, 159, 0);
+    margin-left: 5%;
+    font-size: 5em;
+    margin-top: 30%;
+    padding: 30px;
+    box-shadow: 10px 10px 50px rgb(16, 73, 70);
+  }
+  #non {
+    position: absolute;
+    background-color: rgba(227, 218, 159, 0);
+    margin-left: 50%;
+    font-size: 3.6em;
+    margin-top: 20%;
+    padding: 30px;
+    box-shadow: 10px 10px 50px rgb(16, 73, 70);
+  }
+  h2 {
+    box-shadow: 10px 10px 50px rgb(37, 25, 164);
+    font-size: 3em;
+  }
 }/*# sourceMappingURL=menu.css.map */
